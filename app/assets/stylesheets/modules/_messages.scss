@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #ffffff;
+  height: 100vh;
+  width: calc(100vw - 300px);
+  float: right;
+  
+}
+
+.main-head {
+  background-color: #ffffff;
+  height: 100px;
+  width: calc(100vw - 300px);
+}
+
+.main-chat {
+  background-color: #fafafa;
+  width: calc(100vw - 300px);
+  height: calc(100vh - 190px);
+}
+
+.main-foot {
+  background-color: #d2d2d2;
+  height: 90px;
+  width: calc(100vw - 300px);
+}
+.side {
+  float: left;
+  background-color: #253141;
+  height: 100px;
+  width: 300px;
+}
+
+.side-head {
+  background-color: #253141;
+  height: 100px;
+  width: 300px;
+}
+
+.side-body {
+  background-color: #2f3e51;
+  width: 300px;
+  height: calc(100vh - 100px);
+}
