@@ -1,4 +1,18 @@
 .main
-  .main-head
-  .main-chat
-  .main-foot
+  .main__head
+    .main__head_left
+      %h1 test
+      %p Menber:masa
+    .main__head_right
+      %h2 Edit
+  .main__chat
+    .main__chat_message
+      %a masa 
+      %b 2019/11/20/(Wed)17:43:01
+      %p おはよう
+  .main__foot
+    %form.new-message
+      %input.input-text{:placeholder => "type a message", :type => "text"}/
+      %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
+    .main__foot_image
+      =icon('fas','image')
