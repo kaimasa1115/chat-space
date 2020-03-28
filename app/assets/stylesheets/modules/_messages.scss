@@ -11,8 +11,7 @@
   
   &__head {
     height: 100px;
-    background-color: #253141;
-    
+    background-color: #253141;    
     .side-head__block {
       color: #ffffff;
       width: 100%;
@@ -21,11 +20,11 @@
       justify-content: space-between;
       padding-top: 40px;
       height: 60px;
-    .side-head-left {
-      margin-left: 10px;
+        .side-left {
+          margin-left: 10px;
     }    
-    .side-head-right {
-      margin-right: 20px;
+        .side-right {
+          margin-right: 20px;
     }
     }
   
@@ -98,7 +97,7 @@
       padding-top: 35px;
       margin-left: 40px;
     }
-      .main__chat_message a {
+      &__chat_message a {
       color: #333333;
       font-size: 16px;
     }
