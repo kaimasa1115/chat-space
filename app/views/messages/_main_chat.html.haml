@@ -14,14 +14,13 @@
       %a masa
       %b 2019/11/20/(Wed)17:43:01
       %p 今日は夜から雨
-
-
-
-
-
   .main__foot
     %form.new-message
       %input.input-text{:placeholder => "type a message", :type => "text"}/
       %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
     .main__foot_image
-      =icon('fas','image')
+      %label{class: "input-box__image"}
+        = icon('fas', 'image')
+        %input{type: "file"}
+       
+

@@ -137,7 +137,10 @@
       top: 30px;
       font-size: 1.3rem;
     } 
-      
+    .main__foot_image input {
+      font-size: 1px;
+      visibility: hidden;
+    }
     
   }
 }
