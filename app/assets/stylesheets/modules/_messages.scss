@@ -11,26 +11,30 @@
   
   &__head {
     height: 100px;
-    background-color: #253141;    
+        
     .side-head__block {
-      color: #ffffff;
       width: 100%;
       font-size: 16px;
       display: flex;
       justify-content: space-between;
+      position: relative;
       padding-top: 40px;
-      height: 60px;
-        .side-left {
-          margin-left: 10px;
-    }    
-        .side-right {
-          margin-right: 20px;
-    }
-    }
-  
-      
-  
-}
+      color: #ffffff;
+      }
+      .side-left {
+        margin-left: 10px;
+      }
+      .side-center a {
+        margin-left: 180px;
+        color: #ffffff;
+      }
+      .side-mark a {
+        margin-right: 10px;
+        color: #ffffff;
+      }
+  }
+
+
   &__box {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
@@ -38,20 +42,21 @@
     bottom: 0px;
     width: 300px;
   
-  .side-name {
+    .side-name {
       color: #ffffff;
       margin-top: 40px;
       margin-left: 20px;
     }
     .side-name-top {
       font-size: 15px;
-      
     }
     .side-name-bottom {
       font-size: 11px;
     }
   }
 }
+
+
   
 
 

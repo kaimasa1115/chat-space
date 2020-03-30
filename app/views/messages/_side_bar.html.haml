@@ -2,12 +2,13 @@
   .side__head
     .side-head__block
       .side-left
-        masa
-      .side-right
-        %i.fa.fa-edit
-        %i.fa.fa-cog
-    
-      
+        = current_user.name
+      .side-center
+        = link_to do
+          = icon('fas', 'pen-square', class: 'icon')
+      .side-mark
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
 .side__box
   .side-name
     .side-name-top
