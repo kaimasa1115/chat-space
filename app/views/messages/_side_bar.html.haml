@@ -4,15 +4,18 @@
       .side-left
         = current_user.name
       .side-center
-        = link_to do
+        = link_to new_group_path do
           = icon('fas', 'pen-square', class: 'icon')
       .side-mark
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'icon')
 .side__box
+  - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
   .side-name
     .side-name-top
-      techcamp  
+      = group.name  
     .side-name-bottom
       %pまだメッセージがありません
       
