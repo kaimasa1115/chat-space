@@ -33,8 +33,8 @@
         color: #ffffff;
         
       }
-  }
-
+  
+}
 
   &__box {
     background-color: #2f3e51;
@@ -120,32 +120,39 @@
     background-color: #d2d2d2;
     height: 90px;
     position: relative;
-    .new-message {
+    .form {
       margin-left: 40px;
       padding-top: 15px;
-      position: relative;
     }
-    .input-text {
+      .form__message {
       height: 60px;
       width: 900px;
+      position: relative;
+      margin-bottom: 20px;
+      }
+        .form__submit {
+          background-color: #00ccff;
+          color: white;
+          width: 100px;
+          height: 60px;
+          margin-left: 700px;
+          position: absolute;
     }
-    .submit-btn {
-      background-color: #00ccff;
-      color: white;
-      width: 100px;
-      height: 60px;
-      margin-left: 10px;
-    }
-    .main__foot_image {
-      position: absolute;
-      margin-left: 900px;
-      top: 30px;
-      font-size: 1.3rem;
-    } 
-    .main__foot_image input {
-      font-size: 1px;
-      visibility: hidden;
-    }
-    
+   
+
+        .icon {
+          position: absolute;
+          margin-left: 850px;
+          top: 35px;
+          font-size: 1.3rem;
+          margin-right: 100px;
+       } 
+        .hidden {
+        font-size: 1px;
+        visibility: hidden;
+        }
+     }
   }
-}
+
+
+

@@ -12,12 +12,12 @@
 .side__box
   - current_user.groups.each do |group|
     .group
-      = link_to '#' do
+      = link_to group_messages_path(group) do
         .side-name
           .side-name-top
-            =group.name
+            = group.name
           .side-name-bottom
-            %pまだメッセージがありません
+            = group.show_last_message
           
 
 
