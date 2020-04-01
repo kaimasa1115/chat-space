@@ -5,15 +5,9 @@
       %p Menber:masa
     .main__head_right
       %h2 Edit
-  .main__chat
-    .main__chat_message
-      %a masa 
-      %b 2019/11/20/(Wed)17:43:01
-      %p おはよう
-    .main__chat_message
-      %a masa
-      %b 2019/11/20/(Wed)17:43:01
-      %p 今日は夜から雨
+  .main-chat
+    .messages
+      = render @messages   
   .main__foot
     .form
       = form_for [@group, @message] do |f|
@@ -22,6 +16,8 @@
           = f.label :image, class: 'form__mask__image' do
             = icon('fas', 'image', class: 'icon')
             = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
+          = f.submit 'Send' , class: 'form__submit'
+ 
+        
       
 
