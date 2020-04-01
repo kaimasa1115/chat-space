@@ -116,42 +116,41 @@
         font-size: 14px;
       }     
   }
-  &__foot {
-    background-color: #d2d2d2;
+  .form {
+    background-color: #DDDDDD;
+    box-sizing: border-box;
     height: 90px;
-    position: relative;
-    .form {
-      margin-left: 40px;
-      padding-top: 15px;
+    padding: 20px 50px 20px 40px;
+    &__message {
+      border: none;
+      float: left;
+      height: 50px;
+      width: 800px;
     }
-      .form__message {
-      height: 60px;
-      width: 900px;
-      position: relative;
-      margin-bottom: 20px;
+    &__mask {
+      background-color: white;
+      float: left;
+      height: 50px;
+      padding-right: 10px;
+      &__image {
+        font-size: 20px;
+        line-height: 50px;
       }
-        .form__submit {
-          background-color: #00ccff;
-          color: white;
-          width: 100px;
-          height: 60px;
-          margin-left: 700px;
-          position: absolute;
+      .hidden {
+        display: none;
+      }
     }
-   
-
-        .icon {
-          position: absolute;
-          margin-left: 850px;
-          top: 35px;
-          font-size: 1.3rem;
-          margin-right: 100px;
-       } 
-        .hidden {
-        font-size: 1px;
-        visibility: hidden;
-        }
-     }
+    &__submit {
+      background-color: #00ccff;
+      border: none;
+      color: white;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 60px;
+      padding: 0 30px;
+    }
+  }
   }
 
 
