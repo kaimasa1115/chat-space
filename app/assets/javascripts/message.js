@@ -1,5 +1,4 @@
 $(function(){ 
-  console.log(11111)
   function buildHTML(message){
    if ( message.image ) {
      var html =
