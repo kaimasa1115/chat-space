@@ -60,6 +60,7 @@ gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'jquery-rails'
+
 group :development, :test do
   gem 'capistrano'
   gem 'capistrano-rbenv'
@@ -67,5 +68,6 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
   gem 'byebug', platform: :mri
-  gem 'fog-aws'
 end
+    
+gem 'fog-aws'
