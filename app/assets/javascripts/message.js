@@ -1,5 +1,4 @@
 $(function(){ 
-  console.log(last_message_id);
   function buildHTML(message){
    if ( message.image ) {
      var html =
@@ -40,7 +39,8 @@ $(function(){
      return html;
    };
  }
-$('.js-form').on('submit', function(e){
+$('#new_message').on('submit', function(e){
+  console.log ('aaaaaa')
  e.preventDefault();
  var formData = new FormData(this);
  var url = $(this).attr('action')
