@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .side {
@@ -33,29 +34,39 @@
         color: #ffffff;
         
       }
+
+        
+      
   
 }
 
-  &__box {
-    background-color: #2f3e51;
-    height: calc(100vh - 100px);
-    position: absolute;
-    bottom: 0px;
-    width: 300px;
-    overflow: hidden;
-    .side-name {
-      color: #ffffff;
+&__box {
+  background-color: #2f3e51;
+  height: calc(100% - 100px);
+  position: absolute;
+  bottom: 0px;
+  width: 300px;
+  overflow: hidden;
+  
+  .side-name {
+    color: #ffffff;
       margin-top: 40px;
       margin-left: 20px;
-    }
+  }
     .side-name-top {
-      font-size: 15px;
-    }
+      font-size: 15px;  
+  }
+    .side-name-top a {
+      display: block;
+      text-decoration: none;
+  }
     .side-name-bottom {
       font-size: 11px;
-    }
+    
   }
 }
+}
+
 
 
   
@@ -69,33 +80,34 @@
     background-color: #ffffff;
     height: 100px;
     width: calc(100vw - 300px);
-    
-    .main__head_left {
+    display: flex;
+      .main__head_left {
       color: #333333;
       font-size: 20px;
-      margin-left: 20px;
+      margin-left: 30px;
       
       
     }
       .main__head_left_name {
         color: #999999;
         font-size: 12px;
-        margin-right: 100px;
-        margin-top: 20px;
+        margin-left: 30px;
+        margin-top: 35px;
         
     }
       .main__head_right {
-        margin-right: 30px;
         font-size: 16px;
-        color: #38aef0;
-        border: solid 1px #38aef0;
+        border: 1px solid $light_blue;
         height:40px;
         width: 72px;
-        float: right;
         text-align: center;
         line-height: 40px;
-        
+        margin-left: 750px;
+        margin-top: 25px;
     }
+      .main__head_right a {
+        color: $light_blue;
+      }
   }
   .messages {
     background-color: #FAFAFA;
@@ -139,7 +151,7 @@
       border: none;
       float: left;
       height: 50px;
-      width: 800px;
+      width: calc(100% - 150px);
     }
     &__mask {
       background-color: white;

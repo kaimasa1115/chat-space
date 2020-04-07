@@ -92,4 +92,7 @@ $('.js-form').on('submit', function(e){
     alert('error');
   });
 };
+if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+  setInterval(reloadMessages, 7000);
+}
 });
