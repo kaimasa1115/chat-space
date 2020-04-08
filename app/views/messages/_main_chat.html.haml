@@ -2,9 +2,11 @@
   .main__head
     .main__head_left
       = @group.name
-      .main__head_left_name
-      - @group.users.each do |user|
-        = user.name     
+      .main__head_left_group
+        %a Member:
+        .main__head_left_name
+        - @group.users.each do |user|
+          = user.name     
     .main__head_right
       = link_to edit_group_path(@group) do
         Edit
